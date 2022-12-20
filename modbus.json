@@ -82,7 +82,90 @@
                 "address": 1408
                 }
           ]
-        }
+        },
+        {
+            "host": "10.69.50.241",
+            "port": 502,
+            "type": "tcp",
+            "method": "socket",
+            "timeout": 35,
+            "byteOrder": "BIG",
+            "wordOrder": "BIG",
+            "retries": true,
+            "retryOnEmpty": true,
+            "retryOnInvalid": true,
+            "pollPeriod": 45000,
+            "unitId": 1,
+            "deviceName": "Camping Place 2",
+            "deviceType": "SmartPowerSocket",
+            "sendDataOnlyOnChange": false,
+            "connectAttemptTimeMs": 5000,
+            "connectAttemptCount": 5,
+            "waitAfterFailedAttemptsMs": 30000,
+            "attributes": [
+              {
+                "byteOrder": "BIG",
+                "tag": "serialNumber",
+                "type": "32uint",
+                "functionCode": 3,
+                "objectsCount": 2,
+                "address": 342
+              }
+            ],
+            "timeseries": [
+              {
+                "byteOrder": "BIG",
+                "tag": "currentI1",
+                "type": "32float",
+                "functionCode": 3,
+                "objectsCount": 2,
+                "address": 32782
+              },
+              {
+                "byteOrder": "BIG",
+                "tag": "currentActiveEnergyDelivery",
+                "type": "32float",
+                "functionCode": 3,
+                "objectsCount": 2,
+                "address": 33030
+              },
+              {
+                "byteOrder": "BIG",
+                "tag": "phaseVoltageU1",
+                "type": "32float",
+                "functionCode": 3,
+                "objectsCount": 2,
+                "address": 32774
+              },
+              {
+                "byteOrder": "BIG",
+                "tag": "activePower",
+                "type": "32float",
+                "functionCode": 3,
+                "objectsCount": 2,
+                "address": 32790
+              },
+              {
+                "byteOrder": "BIG",
+                "tag": "inputState",
+                "type": "bytes",
+                "functionCode": 3,
+                "objectsCount": 1,
+                "address": 6656
+              }
+            ],
+          "attributeUpdate": [
+                  {
+                  "byteOrder": "BIG",
+                  "tag": "socketState",
+                  "type": "string",
+                  "functioncode": 6,
+                  "objectscount": 12,
+                  "address": 1408
+                  }
+            ]
+          }
+
       ]
     }
 }
